@@ -1,6 +1,8 @@
 <div class="contents row">
+  <section class="triangle">
+    <h2 class="header-text">会員登録</h2>
+  </section>
   <div class="container">
-    <h2>Sign up</h2>
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -37,7 +39,7 @@
       </div>
 
       <div class="register-btn">
-        <%= f.submit "Sign up", class:"register-btn" %>
+        <%= f.submit "Sign up", class:"register-red-btn" %>
       </div>
     <% end %>
   </div>

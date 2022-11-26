@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!--meta name="viewport" content="width=device-width, initial-scale=1.0" /-->
     <title>Cosmit</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -22,11 +21,14 @@
         <ul class='lists-right'>
         <% if user_signed_in? %>
           <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+          /
           <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "logout" %></li>
+          /
           <li><%= link_to 'コスメ登録', "#", class:"item-post"%></li>
         <% else %>
           <li><%= link_to 'Login', new_user_session_path, class: "login" %></li>
-          <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+          /
+          <li><%= link_to 'Sign up', new_user_registration_path, class: "sign-up" %></li>
         <% end%>
         </ul>
       </div>

@@ -1,6 +1,8 @@
 <div class="contents row">
+  <section class="triangle">
+    <h2 class="header-text">ログイン</h2>
+  </section>
   <div class="container">
-    <h2>Log in</h2>
     <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <div class="form-group">
         <div class="form-text-wrap">

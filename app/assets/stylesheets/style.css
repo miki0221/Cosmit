@@ -6,28 +6,6 @@ html {
   background-color: #f1f7d9;
 }
 
-/******検討中***
-PC表示時
-p {
-  font-size: 30px;
-}
-
-タブレット表示時
-@media (max-width: 1000px) {
-  p {
-    font-size: 25px;
-  }
-}
-
-スマホ表示時
-@media (max-width: 500px) {
-  p {
-    font-size: 20px;
-  }
-}
-***検討中******/
-
-
 /***************
 ヘッダー
 ***************/

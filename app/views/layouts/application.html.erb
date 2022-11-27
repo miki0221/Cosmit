@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>Cosmit</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class= "header">
+      <div class= "header-bar_row">
+      <%= link_to 'Cosmit', root_path, class: "header-logo" %>
+        <ul class='lists-right'>
+        <% if user_signed_in? %>
+          <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+          /
+          <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "logout" %></li>
+          /
+          <li><%= link_to 'コスメ登録', "#", class:"item-post"%></li>
+        <% else %>
+          <li><%= link_to 'Login', new_user_session_path, class: "login" %></li>
+          /
+          <li><%= link_to 'Sign up', new_user_registration_path, class: "sign-up" %></li>
+        <% end%>
+        </ul>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

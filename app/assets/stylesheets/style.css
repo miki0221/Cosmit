@@ -1,0 +1,54 @@
+/***************
+ベース
+***************/
+html {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  background-color: #f1f7d9;
+}
+
+/***************
+ヘッダー
+***************/
+
+.header {
+  height: 60px;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #4b4814;
+}
+
+.header-logo {
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+}
+
+.header-bar_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  line-height: 50px;
+}
+
+.lists-right li {
+  padding: 0 10px;
+}
+
+.lists-right a {
+  color: #4b4814;
+}
+
+.item-post {
+  padding: 5px;
+  border: 1px solid #4b4814;
+  border-radius: 5px;
+}

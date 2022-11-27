@@ -80,7 +80,7 @@
   padding-top: 20px;
 }
 
-.register-red-btn, .login-red-btn{
+.register-red-btn, .login-red-btn {
   width: 100%;
   background: #a23b2f;
   border: 1px solid #a23b2f;
@@ -88,8 +88,4 @@
   line-height: 40px;
   font-size: 14px;
   cursor: pointer;
-}
-
-.login-btn {
-
 }

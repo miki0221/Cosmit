@@ -74,13 +74,13 @@
   resize: none;
 }
 
-.register-btn, .login-btn {
+.register-btn {
   width: 50%;
   margin: 0 auto;
   padding-top: 20px;
 }
 
-.register-red-btn, .login-red-btn {
+.register-red-btn {
   width: 100%;
   background: #a23b2f;
   border: 1px solid #a23b2f;

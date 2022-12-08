@@ -50,7 +50,6 @@ RSpec.describe Item, type: :model do
       it '使用開始日が空では登録ができない' do
         @item.start_date = ''
         @item.valid?
-        binding.pry
         expect(@item.errors.full_messages).to include "Start date can't be blank"
       end
     end

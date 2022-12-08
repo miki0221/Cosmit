@@ -39,9 +39,14 @@ https://cosmit.onrender.com
 ## ユーザーログイン
 [![Image from Gyazo](https://i.gyazo.com/fca338cbd61b8810cad56e676997cf9c.gif)](https://gyazo.com/fca338cbd61b8810cad56e676997cf9c)
 
+## コスメ登録(投稿)
+[![Image from Gyazo](https://i.gyazo.com/6d926b4b3ded7121db77c7318936093b.gif)](https://gyazo.com/6d926b4b3ded7121db77c7318936093b)
+
+### カテゴリー選択
+[![Image from Gyazo](https://i.gyazo.com/3002be5f6276670d5e3c15ab36022e74.gif)](https://gyazo.com/3002be5f6276670d5e3c15ab36022e74)
 # 実装予定の機能
-現在は登録機能を実装中
-今後はカテゴリー別の一覧表示、編集・削除・お気に入り機能を実装予定
+現在は一覧表示機能を実装中
+今後は編集・削除・お気に入り機能を実装予定
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/f632ab3808a2e7251b7d66180b029878.png)](https://gyazo.com/f632ab3808a2e7251b7d66180b029878)
@@ -51,4 +56,4 @@ https://cosmit.onrender.com
 
 # 工夫したポイント
 大分類のカテゴリーを選択したら、
-選択したカテゴリーによって詳細カテゴリーの表示内容が変わること。(現在実装中)
+選択したカテゴリーによって詳細カテゴリーの表示内容が変わること。

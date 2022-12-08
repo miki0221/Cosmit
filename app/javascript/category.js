@@ -23,6 +23,10 @@ window.addEventListener('load', function(){
       categoryAll.style.visibility ="hidden"
     } else {
       categoryAll.style.visibility ="visible"
+      categoryFace.style.visibility ="hidden"
+      categoryEye.style.visibility ="hidden"
+      categoryLip.style.visibility ="hidden"
+      categoryAll.style.visibility ="hidden"
     }
   });
 });

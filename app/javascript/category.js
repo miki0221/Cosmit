@@ -26,7 +26,6 @@ window.addEventListener('load', function(){
       categoryFace.style.visibility ="hidden"
       categoryEye.style.visibility ="hidden"
       categoryLip.style.visibility ="hidden"
-      categoryAll.style.visibility ="hidden"
     }
   });
 });

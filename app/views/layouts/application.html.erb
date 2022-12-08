@@ -24,7 +24,7 @@
           /
           <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "logout" %></li>
           /
-          <li><%= link_to 'コスメ登録', "#", class:"item-post"%></li>
+          <li><%= link_to 'コスメ登録', new_item_path, class:"item-post"%></li>
         <% else %>
           <li><%= link_to 'Login', new_user_session_path, class: "login" %></li>
           /

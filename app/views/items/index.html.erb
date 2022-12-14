@@ -1,1 +1,103 @@
-index
+<div class="main">
+  <%# TOPイメージ部分 %>
+  <div class="main-container">
+    <div class="title-content">
+      <div class="service-concept">
+        <%= image_tag "cosmit-top.png", class:"top-img" %>
+      </div>
+    </div>
+    <%# /TOPイメージ部分 %>
+    <%# コスメ一覧 %>
+    <div class="item-contents">
+      <h4 class="title">Cosmetic list</h4>
+      <div class="item-category">
+        <%#カテゴリー Face%>
+        <div class="items-category_name">Face
+        </div>
+        <ul class="item-lists">
+          <% @post_face.each do |item| %>
+            <li class='list'>
+            <%#= link_to item_path(item.id) do %>
+              <div class='item-img-content'>
+                <%= image_tag item.image, class: "item-img" if item.image.attached? %>
+              </div>
+              <div class="item-info">
+                <h4 class="item-brand">
+                  <%= item.brand %>
+                </h4>
+                <h4 class="item-name">
+                  <%= item.title %>
+                </h4>
+                <div class="item-category_option">
+                  <%= item.category_option.name %>
+                </div>
+              </div>
+              <div class="user-name">
+                <%= link_to item.user.nickname %>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+        <%# /カテゴリー Face %>
+
+        <%#カテゴリー Eye %>
+        <div class="items-category_name">Eye
+        </div>
+        <ul class="item-lists">
+          <% @post_eye.each do |item| %>
+            <li class='list'>
+            <%#= link_to item_path(item.id) do %>
+              <div class='item-img-content'>
+                <%= image_tag item.image, class: "item-img" if item.image.attached? %>
+              </div>
+              <div class="item-info">
+                <h4 class="item-brand">
+                  <%= item.brand %>
+                </h4>
+                <h4 class="item-name">
+                  <%= item.title %>
+                </h4>
+                <div class="item-category_option">
+                  <%= item.category_option.name %>
+                </div>
+              </div>
+              <div class="user-name">
+                <%= link_to item.user.nickname %>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+        <%# /カテゴリー Eye %>
+
+        <%#カテゴリー Lip %>
+        <div class="items-category_name">Lip
+        </div>
+        <ul class="item-lists">
+          <% @post_lip.each do |item| %>
+            <li class='list'>
+            <%#= link_to item_path(item.id) do %>
+              <div class='item-img-content'>
+                <%= image_tag item.image, class: "item-img" if item.image.attached? %>
+              </div>
+              <div class="item-info">
+                <h4 class="item-brand">
+                  <%= item.brand %>
+                </h4>
+                <h4 class="item-name">
+                  <%= item.title %>
+                </h4>
+                <div class="item-category_option">
+                  <%= item.category_option.name %>
+                </div>
+              </div>
+              <div class="user-name">
+                <%= link_to item.user.nickname %>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+        <%# /カテゴリー Lip %>
+      </div>
+    </div>
+  </div>
+</div>

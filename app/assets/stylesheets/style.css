@@ -3,7 +3,7 @@
 ***************/
 html {
   font-family: 'Zen Maru Gothic', sans-serif;
-  background-color: #f1f7d9;
+  background-color: #f0eef1;
 }
 
 /***************
@@ -18,7 +18,7 @@ html {
 
 .header a {
   text-decoration: none;
-  color: #4b4814;
+  color: black;
 }
 
 .header-logo {
@@ -44,11 +44,10 @@ html {
 }
 
 .lists-right a {
-  color: #4b4814;
+  color: black;
 }
 
 .item-post {
   padding: 5px;
-  border: 1px solid #4b4814;
-  border-radius: 5px;
+  border-bottom: 3px solid #365d91;
 }

@@ -1,6 +1,13 @@
 class ItemsController < ApplicationController
   def index
-    # @items = Item.all.order('created_at DESC')
+    @category_face = Item.where(category_id: 2)
+    @post_face = @category_face.all.order('created_at DESC')
+
+    @category_eye = Item.where(category_id: 3)
+    @post_eye = @category_eye.all.order('created_at DESC')
+
+    @category_lip = Item.where(category_id: 4)
+    @post_lip = @category_lip.all.order('created_at DESC')
   end
 
   def new

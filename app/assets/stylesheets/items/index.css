@@ -1,0 +1,85 @@
+/********************
+TOP画像
+********************/
+.service-concept {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 10vh 15vw;
+  filter:drop-shadow(10px 10px 5px #6e848c);
+}
+
+.top-img {
+  height: 80vh;
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+/********************
+共通
+********************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/********************
+コスメ一覧
+********************/
+.item-contents {
+  background-color: #f0eef1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.title {
+  font-size: 4vh;
+  line-height: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.items-category_name {
+  font-size: 3vh;
+  width: 100%;
+  display: flex ;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: #365d91;
+  filter:drop-shadow(0 5px 5px #6e848c);
+
+}
+
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #f0eef1;
+  list-style: none;
+}
+
+.item-img-content {
+  display: flex;
+  justify-content: center;
+  object-fit:contain;
+}
+
+.item-img {
+  width: 30vh;
+  height: 30vh;
+}
+
+.item-info {
+  background-color: #f0eef1;
+}

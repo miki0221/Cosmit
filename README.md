@@ -34,19 +34,19 @@ https://cosmit.onrender.com
 
 # 実装した機能についての画像やGIFおよびその説明
 ## ユーザー登録
-[![Image from Gyazo](https://i.gyazo.com/fca338cbd61b8810cad56e676997cf9c.gif)](https://gyazo.com/fca338cbd61b8810cad56e676997cf9c)
-
+[![Image from Gyazo](https://i.gyazo.com/636ea7965cb13d6346ddec7d6a1d692b.gif)](https://gyazo.com/636ea7965cb13d6346ddec7d6a1d692b)
 ## ユーザーログイン
-[![Image from Gyazo](https://i.gyazo.com/fca338cbd61b8810cad56e676997cf9c.gif)](https://gyazo.com/fca338cbd61b8810cad56e676997cf9c)
+[![Image from Gyazo](https://i.gyazo.com/2d2ca739ecff96b886ae0e47c6ebc85a.gif)](https://gyazo.com/2d2ca739ecff96b886ae0e47c6ebc85a)
 
 ## コスメ登録(投稿)
-[![Image from Gyazo](https://i.gyazo.com/6d926b4b3ded7121db77c7318936093b.gif)](https://gyazo.com/6d926b4b3ded7121db77c7318936093b)
+[![Image from Gyazo](https://i.gyazo.com/816782b3e01089f5ad1351a84fbfdc28.gif)](https://gyazo.com/816782b3e01089f5ad1351a84fbfdc28)
 
 ### カテゴリー選択
-[![Image from Gyazo](https://i.gyazo.com/3002be5f6276670d5e3c15ab36022e74.gif)](https://gyazo.com/3002be5f6276670d5e3c15ab36022e74)
+[![Image from Gyazo](https://i.gyazo.com/d4369b561090a46f0a88f8f0d4939bc8.gif)](https://gyazo.com/d4369b561090a46f0a88f8f0d4939bc8)
+
 # 実装予定の機能
-現在は一覧表示機能を実装中
-今後は編集・削除・お気に入り機能を実装予定
+現在は編集機能を実装中。
+今後は削除・お気に入り機能などを実装予定
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/f632ab3808a2e7251b7d66180b029878.png)](https://gyazo.com/f632ab3808a2e7251b7d66180b029878)

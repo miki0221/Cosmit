@@ -8,24 +8,24 @@ window.addEventListener('load', function(){
     const categoryLip = this.document.querySelector(".category-lip")
     if (category.value == 2 ){
       categoryFace.style.visibility ="visible"
-      categoryEye.style.visibility ="hidden"
-      categoryLip.style.visibility ="hidden"
-      categoryAll.style.visibility ="hidden"
+      categoryEye.style.display = "none"
+      categoryLip.style.display = "none"
+      categoryAll.style.display = "none"
     } else if (category.value == "3"){
-      categoryFace.style.visibility ="hidden"
+      categoryFace.style.display = "none"
       categoryEye.style.visibility ="visible"
-      categoryLip.style.visibility ="hidden"
-      categoryAll.style.visibility ="hidden"
+      categoryLip.style.display = "none"
+      categoryAll.style.display = "none"
     } else if (category.value == "4"){
-      categoryFace.style.visibility ="hidden"
-      categoryEye.style.visibility ="hidden"
+      categoryFace.style.display = "none"
+      categoryEye.style.display = "none"
       categoryLip.style.visibility ="visible"
-      categoryAll.style.visibility ="hidden"
+      categoryAll.style.display = "none"
     } else {
       categoryAll.style.visibility ="visible"
-      categoryFace.style.visibility ="hidden"
-      categoryEye.style.visibility ="hidden"
-      categoryLip.style.visibility ="hidden"
+      categoryFace.style.display = "none"
+      categoryEye.style.display = "none"
+      categoryLip.style.display = "none"
     }
   });
 });

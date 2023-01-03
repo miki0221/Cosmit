@@ -23,10 +23,21 @@ class ItemsController < ApplicationController
     end
   end
 
+  def show
+    @item = Item.find(params[:id])
+
+    @today = Date.today
+    start_date = @item.start_date.to_date
+    @expiration_date_3month = start_date >> 3
+    @expiration_date_6month = start_date >> 6
+    @expiration_date_1year = start_date >> 12
+  end
+
   private
 
   def item_params
     params.require(:item).permit(:image, :brand, :title, :content, :category_id, :category_option_id,
                                  :start_date).merge(user_id: current_user.id)
   end
+
 end

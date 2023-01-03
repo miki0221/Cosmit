@@ -33,9 +33,6 @@
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:category_option_id, CategoryOption.all, :id, :name, {}, {class:"category-option-all"}) %>
-        <%= f.collection_select(:category_option_id, CategoryOption.find([2,3,4,5,6,7,8,9,10,11,12]), :id, :name, {}, {class:"category-face"}) %>
-        <%= f.collection_select(:category_option_id, CategoryOption.find([13,14,15,16,17,18]), :id, :name, {}, {class:"category-eye"}) %>
-        <%= f.collection_select(:category_option_id, CategoryOption.find([19,20,21,22,23,24]), :id, :name, {}, {class:"category-lip"}) %>
       </div>
     </div>
 

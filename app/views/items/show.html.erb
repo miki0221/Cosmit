@@ -1,0 +1,114 @@
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="item-name">
+      <%= @item.brand %>
+    </h2>
+    <div class="item-img-content">
+      <%= image_tag @item.image, class:"item-box-img" %>
+    </div>
+    <div class="item-explain-box">
+      <span><%= @item.title %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">ユーザー名</th>
+          <td class="datail-value"><%= @item.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">カテゴリー</th>
+          <td class="datail-value"><%= @item.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">カテゴリー詳細</th>
+          <td class="datail-value"><%= @item.category_option.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">フリーワード</th>
+          <td class="datail-value"><%= @item.content %></td>
+        </tr>
+        <%if current_user.id == @item.user_id %>
+          <tr>
+            <th class="detail-item">使用開始日</th>
+            <td class="datail-value"><%= @item.start_date %></td>
+          </tr>
+          <tr>
+            <th class="detail-item">使用期限目安</th>
+            <td class="datail-value">
+            <%#Face%>
+            <%if @item.category_id == 2 %> 
+              <%if @item.category_option_id == 6 %>
+                <%= @item.start_date + 3.month %>
+              <%elsif @item.category_option_id == (2 || 5 || 7 || 8 || 9 || 12) %>
+                <%= @item.start_date + 6.month %>
+              <%else %><%# @item.category_option_id == (3 || 4 || 10 || 11 )%>
+                  <%= @expiration_date_1year %>
+              <%end%>
+            <%#Eye%>
+            <%elsif @item.category_id == 3 %>
+              <%if @item.category_option_id == (15 || 17 ) %>
+                <%= @item.start_date + 3.month %>
+              <%elsif @item.category_option_id == (13 || 18 )%>
+                <%= @item.start_date + 6.month %>
+              <%else%><%# @item.category_option_id == (14 || 16) %>
+                <%= @item.start_date + 1.year %>
+              <%end%>
+            <%#Lip%>
+            <%elsif @item.category_id == 4 %>
+              <%if @item.category_option_id == (19 || 20 || 21 || 22 || 24) %>
+                <%= @item.start_date + 6.month %>
+              <%else%><%#@item.category_option_id == 23 %>
+                <%= @item.start_date + 1.year %>
+              <%end%>
+            <%end%>
+            </td>
+          </tr>
+          <tr>
+            <th class="detail-item">残数</th>
+            <td class="datail-value">
+            <%#Face%>
+            <%if @item.category_id == 2 %> 
+              <%if @item.category_option_id == 6 %>
+                <%=@expiration_date_3month - @today %>日
+              <%elsif @item.category_option_id == (2 || 5 || 7 || 8 || 9 || 12) %>
+                <%= @expiration_date_6month - @today %>日
+              <%else %><%# @item.category_option_id == (3 || 4 || 10 || 11 )%>
+                  <%=@expiration_date_1year - @today %>日
+              <%end%>
+            <%#Eye%>
+            <%elsif @item.category_id == 3 %>
+              <%if @item.category_option_id == (15 || 17 ) %>
+                <%=@expiration_date_3month - @today %>日
+              <%elsif @item.category_option_id == (13 || 18 )%>
+                <%= @expiration_date_6month - @today %>日
+              <%else%><%# @item.category_option_id == (14 || 16) %>
+                <%=@expiration_date_1year - @today %>日
+              <%end%>
+            <%#Lip%>
+            <%elsif @item.category_id == 4 %>
+              <%if @item.category_option_id == (19 || 20 || 21 || 22 || 24) %>
+                <%= @expiration_date_6month - @today %>日
+              <%else%><%#@item.category_option_id == 23 %>
+                <%=@expiration_date_1year - @today %>日
+              <%end%>
+            <%end%>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <%#div class="favorite-btn"></div>
+    <%#div class="item-edit-destroy">
+      <%# if user_signed_in?%>
+        <%# if current_user.id == @item.user_id %>
+          <%#= link_to "編集", edit_item_path(@item.id), method: :get, class: "item-edit-btn" %>
+          <%#p class="or-text">or</p>
+          <%= link_to "削除", item_path(@item.id), method: :delete, class:"item-destroy" %>
+        <%# end %>
+      <%# end %>
+    <%#/div><%>
+
+    <%= render 'expiration_date' %>
+
+</div>

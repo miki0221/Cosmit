@@ -1,0 +1,104 @@
+.item-show {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+.item-box h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-box>.name {
+  width: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.item-box-img {
+  height: 50vh;
+  width: 50vw;
+  min-height: 500px;
+  background-color: #f0eef1;
+  object-fit: contain;
+}
+
+.item-explain-box{
+  font-size: 18px;
+  margin: 40px 0px;
+  overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-table {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+.detail-item {
+  width: auto;
+  padding: 5px 10px;
+  background-color: #365d91;
+  color: white;
+  font-size: 14px;
+}
+
+.detail-value {
+  width: 60%;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* 使用期限について */
+
+.expiration-date_explanation {
+  width: 50%;
+  display:flex;
+  justify-content: center;
+  line-height: 1;
+  margin-left: 10px;
+}
+.expiration-date_explanation_title {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.expiration-date_explanation th {
+  background-color: #365d91;
+  color: white;
+  
+}
+
+.explanation_date {
+  width: 10%;
+  padding: 5px 10px;
+  background-color: #365d91;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.explanation_item {
+  width: 40%;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.explanation {
+  width: 40%;
+  font-size: 14px;
+}
+
+.notes {
+  padding: 20px;
+  color: #a23b2f;
+}

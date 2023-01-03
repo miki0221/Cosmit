@@ -41,12 +41,15 @@ https://cosmit.onrender.com
 ## コスメ登録(投稿)
 [![Image from Gyazo](https://i.gyazo.com/816782b3e01089f5ad1351a84fbfdc28.gif)](https://gyazo.com/816782b3e01089f5ad1351a84fbfdc28)
 
-### カテゴリー選択
-[![Image from Gyazo](https://i.gyazo.com/d4369b561090a46f0a88f8f0d4939bc8.gif)](https://gyazo.com/d4369b561090a46f0a88f8f0d4939bc8)
+## 一覧表示
+[![Image from Gyazo](https://i.gyazo.com/c1fb1b5dbcc007b080c171cc90286587.gif)](https://gyazo.com/c1fb1b5dbcc007b080c171cc90286587)
+
+## 詳細表示
+[![Image from Gyazo](https://i.gyazo.com/1d6f07e91d6c636a58f9655c7b68d9b5.gif)](https://gyazo.com/1d6f07e91d6c636a58f9655c7b68d9b5)
 
 # 実装予定の機能
-現在は編集機能を実装中。
-今後は削除・お気に入り機能などを実装予定
+現在はマイページ機能を実装中。
+今後は編集・削除・お気に入り機能などを実装予定
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/f632ab3808a2e7251b7d66180b029878.png)](https://gyazo.com/f632ab3808a2e7251b7d66180b029878)
@@ -55,5 +58,5 @@ https://cosmit.onrender.com
 [![Image from Gyazo](https://i.gyazo.com/b6d9bda5e23285ede3307fde32259bb9.png)](https://gyazo.com/b6d9bda5e23285ede3307fde32259bb9)
 
 # 工夫したポイント
-大分類のカテゴリーを選択したら、
-選択したカテゴリーによって詳細カテゴリーの表示内容が変わること。
+- カテゴリーごとに一覧表示を分けたこと。
+- 詳細カテゴリーによって使用期限を分け、コスメ使用開始日から使用期限までの残数を表示すること。

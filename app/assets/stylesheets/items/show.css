@@ -1,3 +1,5 @@
+/* マイページでも使用 */
+
 .item-show {
   width: 100vw;
   display: flex;
@@ -57,6 +59,11 @@
   font-size: 14px;
 }
 
+.contents_row h3{
+  text-align: center;
+  padding: 5%;
+}
+
 /* 使用期限について */
 
 .expiration-date_explanation {
@@ -100,5 +107,9 @@
 
 .notes {
   padding: 20px;
+  color: #a23b2f;
+}
+
+.expired {
   color: #a23b2f;
 }

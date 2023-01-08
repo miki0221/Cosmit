@@ -31,7 +31,11 @@
                     <%= item.category_option.name %>
                   </div>
                   <div class="user-name">
-                    <%= link_to item.user.nickname %>
+                  <% if user_signed_in? %>
+                    <%= link_to item.user.nickname, user_path(item.user.id) %>
+                  <%else%>
+                    <%= link_to item.user.nickname, new_user_session_path %>
+                  <%end%>
                   </div>
                 </div>
               <% end %>
@@ -65,7 +69,11 @@
                     <%= item.category_option.name %>
                   </div>
                   <div class="user-name">
-                    <%= link_to item.user.nickname %>
+                  <% if user_signed_in? %>
+                    <%= link_to item.user.nickname, user_path(item.user.id) %>
+                  <%else%>
+                    <%= link_to item.user.nickname, new_user_session_path %>
+                  <%end%>
                   </div>
                 </div>
               <% end %>
@@ -99,7 +107,11 @@
                     <%= item.category_option.name %>
                   </div>
                   <div class="user-name">
-                    <%= link_to item.user.nickname %>
+                  <% if user_signed_in? %>
+                    <%= link_to item.user.nickname, user_path(item.user.id) %>
+                  <%else%>
+                    <%= link_to item.user.nickname, new_user_session_path %>
+                  <%end%>
                   </div>
                 </div>
               <% end %>

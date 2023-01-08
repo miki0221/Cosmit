@@ -33,4 +33,6 @@ class CategoryOption < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :items
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :users
 end

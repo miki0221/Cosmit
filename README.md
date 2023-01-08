@@ -16,10 +16,17 @@ https://cosmit.onrender.com
 - Password：test111
 
 # 利用方法
+## 登録ページ
 1. トップページ（一覧ページ）のヘッダーからユーザー新規登録を行う
 2. コスメ登録ボタンからコスメの内容（画像・カテゴリー・ブランド名・コスメ名・フリーワード（特徴・使用感など）使用開始日））を入力し登録する
-3. トップページから詳細ページに移動し、自分が登録したコスメであれば編集・削除ができる
-4. トップページから詳細ページに移動し、他者が登録したコスメであればお気に入り登録ができる
+
+## 一覧ページ
+1. 画像をクリックすると該当コスメの詳細ページに遷移できる。
+2. ユーザー名をクリックするとユーザーが投稿した一覧ページに遷移できる。
+
+## 詳細ページ
+1. 自分が登録したコスメであれば編集・削除ができる
+2. 他者が登録したコスメであればお気に入り登録ができる
 
 # アプリケーションを作成した背景
 - コスメが増えるにつれて所有するコスメの把握ができなくなってきた。
@@ -30,7 +37,7 @@ https://cosmit.onrender.com
 以上のことからコスメ共有・管理アプリを開発することにした。
 
 # 洗い出した要件
-修正中
+[要件定義](https://docs.google.com/spreadsheets/d/16v4DfYaXUDTkTAjtIGgg5dx252OX2gp4LlbMshfY3rU/edit?usp=sharing)
 
 # 実装した機能についての画像やGIFおよびその説明
 ## ユーザー登録
@@ -45,8 +52,12 @@ https://cosmit.onrender.com
 [![Image from Gyazo](https://i.gyazo.com/c1fb1b5dbcc007b080c171cc90286587.gif)](https://gyazo.com/c1fb1b5dbcc007b080c171cc90286587)
 
 ## 詳細表示
-[![Image from Gyazo](https://i.gyazo.com/1d6f07e91d6c636a58f9655c7b68d9b5.gif)](https://gyazo.com/1d6f07e91d6c636a58f9655c7b68d9b5)
+[![Image from Gyazo](https://i.gyazo.com/8afa3f597a3d9e426486bf0fc1a61ead.gif)](https://gyazo.com/8afa3f597a3d9e426486bf0fc1a61ead)
 
+[![Image from Gyazo](https://i.gyazo.com/9d02541d12935a28591fe181c0f6d4fb.gif)](https://gyazo.com/9d02541d12935a28591fe181c0f6d4fb)
+
+## マイページ
+[![Image from Gyazo](https://i.gyazo.com/333a325c820fc9cecfb9369de6b50b4f.gif)](https://gyazo.com/333a325c820fc9cecfb9369de6b50b4f)
 # 実装予定の機能
 現在はマイページ機能を実装中。
 今後は編集・削除・お気に入り機能などを実装予定
@@ -59,4 +70,4 @@ https://cosmit.onrender.com
 
 # 工夫したポイント
 - カテゴリーごとに一覧表示を分けたこと。
-- 詳細カテゴリーによって使用期限を分け、コスメ使用開始日から使用期限までの残数を表示すること。
+- カテゴリー詳細によって使用期限を分け、コスメ使用開始日から使用期限までの残数を表示すること。

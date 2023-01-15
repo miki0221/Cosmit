@@ -1,13 +1,16 @@
 class ItemsController < ApplicationController
+  before_action :set_item, only: [:show, :edit, :update]
+  before_action :check_page_user, only: [:edit, :update]
+
   def index
     category_face = Item.where(category_id: 2)
-    @post_face = category_face.includes(:user).order("created_at DESC")
+    @post_face = category_face.includes(:user).order('created_at DESC')
 
     category_eye = Item.where(category_id: 3)
-    @post_eye = category_eye.includes(:user).order("created_at DESC")
+    @post_eye = category_eye.includes(:user).order('created_at DESC')
 
     category_lip = Item.where(category_id: 4)
-    @post_lip = category_lip.includes(:user).order("created_at DESC")
+    @post_lip = category_lip.includes(:user).order('created_at DESC')
   end
 
   def new
@@ -24,8 +27,6 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.find(params[:id])
-
     @today = Date.today
     start_date = @item.start_date.to_date
     @expiration_date_3month = start_date >> 3
@@ -33,10 +34,31 @@ class ItemsController < ApplicationController
     @expiration_date_1year = start_date >> 12
   end
 
+  def edit
+  end
+
+  def update
+    if @item.update(item_params)
+      redirect_to item_path(@item)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def item_params
     params.require(:item).permit(:image, :brand, :title, :content, :category_id, :category_option_id,
                                  :start_date).merge(user_id: current_user.id)
+  end
+
+  def set_item
+    @item = Item.find(params[:id])
+  end
+
+  def check_page_user
+    return unless user_signed_in? && @item.user_id != current_user.id
+
+    redirect_to action: :index
   end
 end

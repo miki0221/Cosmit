@@ -64,6 +64,35 @@
   padding: 5%;
 }
 
+.item-edit-destroy {
+  display: flex;
+  justify-content: center;
+}
+.item-edit-btn {
+  text-align: center;
+  background-color: #A23B2F;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 10px 50px;
+}
+
+.or-text {
+  font-size: 20px;
+  text-align:center;
+  padding:30px 10px;
+}
+
+/*.item-destroy {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin: 20px 0px;
+  padding: 10px 50px;
+}/*
+
 /* 使用期限について */
 
 .expiration-date_explanation {

@@ -12,8 +12,12 @@ https://cosmit.onrender.com
 # テスト用アカウント
 - Basic認証ID：admin
 - Basic認証Pass：2222
-- Email：test1@test.com
-- Password：test111
+- ユーザー1<br>
+Email：test1@test.com<br>
+Password：test111<br>
+- ユーザー2<br>
+Email：test2@test.com<br>
+Password：test222<br>
 
 # 利用方法
 ## 登録ページ
@@ -42,22 +46,42 @@ https://cosmit.onrender.com
 # 実装した機能についての画像やGIFおよびその説明
 ## ユーザー登録
 [![Image from Gyazo](https://i.gyazo.com/636ea7965cb13d6346ddec7d6a1d692b.gif)](https://gyazo.com/636ea7965cb13d6346ddec7d6a1d692b)
+***
 ## ユーザーログイン
 [![Image from Gyazo](https://i.gyazo.com/2d2ca739ecff96b886ae0e47c6ebc85a.gif)](https://gyazo.com/2d2ca739ecff96b886ae0e47c6ebc85a)
-
+***
 ## コスメ登録(投稿)
 [![Image from Gyazo](https://i.gyazo.com/816782b3e01089f5ad1351a84fbfdc28.gif)](https://gyazo.com/816782b3e01089f5ad1351a84fbfdc28)
-
+***
 ## 一覧表示
 [![Image from Gyazo](https://i.gyazo.com/c1fb1b5dbcc007b080c171cc90286587.gif)](https://gyazo.com/c1fb1b5dbcc007b080c171cc90286587)
+カテゴリー別での一覧表示<br>
+該当カテゴリーに登録がなければダミーの情報が表示される
 
-## 詳細表示
-[![Image from Gyazo](https://i.gyazo.com/8afa3f597a3d9e426486bf0fc1a61ead.gif)](https://gyazo.com/8afa3f597a3d9e426486bf0fc1a61ead)
-
+## ユーザー投稿一覧
 [![Image from Gyazo](https://i.gyazo.com/9d02541d12935a28591fe181c0f6d4fb.gif)](https://gyazo.com/9d02541d12935a28591fe181c0f6d4fb)
+ユーザー名をクリックすると、ユーザー投稿一覧に遷移する<br>
+該当カテゴリーに登録がなければダミーの情報が表示される
+***
+## 詳細表示
+[![Image from Gyazo](https://i.gyazo.com/7396301473a8a2d2631b4bd603e91e44.gif)](https://gyazo.com/7396301473a8a2d2631b4bd603e91e44)
+コスメ画像をクリックすると、詳細画面に遷移する<br>
+投稿したユーザーのコスメであれば以下の項目が表示される<br>
+- 使用開始日
+- 使用期限目安
+- 残日数
+- 編集ボタン
 
+[![Image from Gyazo](https://i.gyazo.com/23d81ce5c8d68dd9a182cfc4202648a8.gif)](https://gyazo.com/23d81ce5c8d68dd9a182cfc4202648a8)
+使用期限が切れると、切れてからの経過日数が表示される
+***
+## 編集機能
+[![Image from Gyazo](https://i.gyazo.com/99c955a3dd7ed95b5d1771d308893ab6.gif)](https://gyazo.com/99c955a3dd7ed95b5d1771d308893ab6)
+***
 ## マイページ
 [![Image from Gyazo](https://i.gyazo.com/333a325c820fc9cecfb9369de6b50b4f.gif)](https://gyazo.com/333a325c820fc9cecfb9369de6b50b4f)
+***
+
 # 実装予定の機能
 現在はマイページ機能を実装中。
 今後は編集・削除・お気に入り機能などを実装予定

@@ -1,0 +1,72 @@
+<div class="container">
+    
+    <%= form_with model: @item, local: true do |f| %>
+    <%= render 'error_messages', model: f.object %>
+
+    <div class="img-upload">
+      <div class='form-text-wrap'>
+        <label class="form-text">コスメ画像</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <div id="previews"></div>
+      <div class="click-upload">
+        <p>クリックしてファイルをアップロード</p>
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+
+    <div class="item-box">
+      <div class="category">
+        <div class="form-text-wrap">
+          <label class="form-text">カテゴリー</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %>
+      </div>
+      <div class="category_option">
+        <div class="form-text-wrap">
+          <label class="form-text">カテゴリー 詳細</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:category_option_id, CategoryOption.all, :id, :name, {}, {class:"category-option-all"}) %>
+      </div>
+    </div>
+
+      <div class="brand">
+        <div class="form-text-wrap">
+          <label class="form-text">ブランド名</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :brand, class:"items-text", placeholder:"ブランド名" %>
+      </div>
+      
+      <div class="title">
+        <div class="form-text-wrap">
+          <label class="form-text">コスメ名</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :title, class:"items-text", placeholder:"コスメ名" %>
+      </div>
+      
+      <div class="content">
+        <div class="form-text-wrap">
+          <label class="form-text">フリーワード</label>
+        </div>
+        <%= f.text_area :content, class:"items-text", placeholder:"特徴・使用感など", rows: "10" %>
+      </div>
+      
+      <div class="item-start-date">
+        <div class="form-text-wrap">
+          <label class="form-text">使用開始日</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.date_field :start_date, class: 'item-date' %>
+      </div>
+      
+      <div class="register-btn">
+        <%= f.submit "SEND" , class:"register-red-btn"%>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

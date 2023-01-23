@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  before_action :set_item, only: [:show, :edit, :update]
-  before_action :check_page_user, only: [:edit, :update]
+  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  before_action :check_page_user, only: [:edit, :update, :destroy]
 
   def index
     category_face = Item.where(category_id: 2)
@@ -44,6 +44,12 @@ class ItemsController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    @item.destroy
+    redirect_to user_path(@item.user.id)
+  end
+
 
   private
 

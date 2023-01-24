@@ -116,7 +116,7 @@
                   <%=(@item.start_date + 1.year - @today).to_i %>日
                 <%else%>
                   <div class="expired">
-                    <%=(@@item.start_date + 1.year - @today).abs.to_i %>日過ぎてます！
+                    <%=(@item.start_date + 1.year - @today).abs.to_i %>日過ぎてます！
                   </div>
                   <%end%>
               <%end%>

@@ -42,7 +42,7 @@
               <%elsif (@item.category_option_id == 2) || (@item.category_option_id ==5) || (@item.category_option_id == 7) || (@item.category_option_id ==8) || (@item.category_option_id == 9) || (@item.category_option_id ==12)%>
                 <%= @item.start_date + 6.month%>
               <%else %><%# (@item.category_option_id == 3) || (@item.category_option_id == 4) || (@item.category_option_id ==10) || (@item.category_option_id == 11 )%>
-                  <%= item.start_date + 1.year %>
+                  <%= @item.start_date + 1.year %>
               <%end%>
             <%#Eye%>
             <%elsif @item.category_id == 3 %>

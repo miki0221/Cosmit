@@ -28,10 +28,6 @@ class ItemsController < ApplicationController
 
   def show
     @today = Date.today
-    start_date = @item.start_date.to_date
-    @expiration_date_3month = start_date >> 3
-    @expiration_date_6month = start_date >> 6
-    @expiration_date_1year = start_date >> 12
   end
 
   def edit
@@ -49,7 +45,6 @@ class ItemsController < ApplicationController
     @item.destroy
     redirect_to user_path(@item.user.id)
   end
-
 
   private
 
